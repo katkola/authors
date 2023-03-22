@@ -7,7 +7,7 @@ import {
     Button,
     Card,
 } from '@mui/material';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const AuthorForm = (props) => {
     //const [state, useState] = useState([]);
@@ -38,6 +38,7 @@ const AuthorForm = (props) => {
                 </FormControl>
                 <br />
                 <Button type="submit">Submit</Button>
+                <Link to={`/`}>Cancel</Link>
             </form>
         </Card>
     )

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import AuthorForm from '../components/AuthorForm';
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 const CreateAuthor = (props) => {
     const { id } = useParams();
@@ -26,7 +26,8 @@ const CreateAuthor = (props) => {
     return(
         <div>
             <h1>Add a new Author:</h1>
-            {<AuthorForm onSubmitProp={createAuthor} initialName={""}/>}
+            {<AuthorForm onSubmitProp={createAuthor} initialName={""}/>
+            }
         </div>
     )
 }

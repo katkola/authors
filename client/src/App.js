@@ -10,6 +10,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
+            <Route element={<Main/>} path="/" />
             <Route element={<Main/>} path="/index" />
             <Route element={<Main/>} path="/authors" />
             <Route element={<NewAuthor/>} path="/authors/new"/>
